@@ -1,0 +1,78 @@
+/* @import './font.scss'; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap'); */
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#main{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    max-width: 100%;
+    .main_h{
+        width: 100%;
+        height: 50px;
+        padding: 0 20px;
+        background: rgba(255, 255, 255, .6);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            img{width: 50px; height: 50px;}
+        }
+        nav{
+            ul{
+                display: flex;
+                li{
+                    a{
+                        display: block;
+                        padding: 10px 20px;
+                        color: #efefef;
+                    }
+                }
+            }
+        }
+    }
+    .main_m{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .container{
+            width: 100%;
+            max-width: 1200px;
+            padding: 60px;
+            box-sizing: border-box;
+            position: relative;
+            perspective: 1000px;
+            .title{
+                text-align: center;
+                font-family: 'Anton', sans-serif;
+                font-size: 90px;
+                line-height: 1;
+                cursor: pointer;
+                transition: .3 ease-in-out;
+                perspective: 500px;
+                /* color: #fff; */
+                color: #ffffff;
+                .subtitle{
+                    position: relative;
+                    top: -120px;
+                }
+            }
+            p{
+                
+                span{
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 90px;
+                    color: #fff;
+                    position: relative;
+                    top: -70px;
+                    &:hover{text-shadow: 5px 5px 20px #705c00;}
+                    &.yang{color: green;}
+                    &.go{color: #ffd104; font-size: 120px;}
+                }
+            }
+        }
+        
+    }
+}
